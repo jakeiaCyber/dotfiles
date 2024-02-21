@@ -4,11 +4,11 @@ opacity = 0.8
 blur = false
 option_as_alt = "Both"
 [font]
-normal = { style = "Regular", family = "Inconsolata LGC Nerd Font Mono" }
-bold = { style = "Bold", family = "Inconsolata LGC Nerd Font Mono" }
-italic = { style = "Italic", family = "Inconsolata LGC Nerd Font Mono" }
-bold_italic = { style = "Bold Italic", family = "Inconsolata LGC Nerd Font Mono" }
-size = 18
+normal = { style = "Regular", family = "JetBrainsMono Nerd Font" }
+bold = { style = "Bold", family = "JetBrainsMono Nerd Font" }
+italic = { style = "Italic", family = "JetBrainsMono Nerd Font" }
+bold_italic = { style = "Bold Italic", family = "JetBrainsMono Nerd Font" }
+size = 20
 [mouse]
 hide_when_typing = true
 [colors]
