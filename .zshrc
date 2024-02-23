@@ -117,7 +117,7 @@ alias python="python3"
 alias pip="pip3"
 alias n="nvim"
 alias v="neovide"
-alias s="fastfetch"
+alias s="neofetch"
 alias cls="clear"
 alias ya="yazi"
 alias cat="bat"
@@ -128,6 +128,7 @@ alias ts="tmux ls"
 alias td="tmux detach"
 alias tka="tmux kill-session"
 alias tk="tmux kill-session -t"
+alias clock="tty-clock -s"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 function ya() {
