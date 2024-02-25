@@ -7,9 +7,9 @@ yabai -m config window_placement second_child
 # padding set to 12px
 yabai -m config top_padding 10
 yabai -m config bottom_padding 2
-yabai -m config left_padding 8
-yabai -m config right_padding 8
-yabai -m config window_gap 8
+yabai -m config left_padding 2
+yabai -m config right_padding 2
+yabai -m config window_gap 2
 
 # -- mouse settings --
 
@@ -45,4 +45,4 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^阿里云盘$" manage=off
-borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=1.0 &
+borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=1.5 &
