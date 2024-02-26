@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # proxy
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
-
+# alias
 alias python="python3"
 alias pip="pip3"
 alias n="nvim"
@@ -124,10 +124,11 @@ alias cat="bat"
 alias ls="colorls -a"
 alias tnew="tmux new -s"
 alias ta="tmux a -t"
-alias ts="tmux ls"
+alias tl="tmux ls"
 alias td="tmux detach"
 alias tka="tmux kill-session"
 alias tk="tmux kill-session -t"
+alias tlnvim=" tmuxifier load-session nvimconfig"
 alias clock="tty-clock -s"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -155,4 +156,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
+# tmuxifier init
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+eval "$(tmuxifier init -)"

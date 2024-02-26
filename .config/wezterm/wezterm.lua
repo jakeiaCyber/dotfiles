@@ -1,5 +1,4 @@
 local wezterm = require("wezterm")
-local mux = wezterm.mux
 
 local config = {
 	default_prog = { "/bin/zsh", "-l" },
@@ -10,11 +9,11 @@ local config = {
 	color_scheme = "Catppuccin Mocha",
 	font_size = 18,
 	line_height = 1.0,
-	font = wezterm.font("JetBrainsMonoNL Nerd Font Mono", { weight = "Regular" }),
+	font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Regular" }),
 	font_rules = {
 		{
 			italic = true,
-			font = wezterm.font("JetBrainsMonoNL Nerd Font Mono", { weight = "Bold", italic = true }),
+			font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Bold", italic = true }),
 		},
 	},
 	adjust_window_size_when_changing_font_size = true,
@@ -47,10 +46,10 @@ local config = {
 	show_new_tab_button_in_tab_bar = false,
 
 	window_background_opacity = 0.8,
-	macos_window_background_blur = 20,
+	macos_window_background_blur = 10,
 	window_close_confirmation = "NeverPrompt",
 
-	-- text_background_opacity = 0.9,
+	-- text_background_opacity = 0.5,
 	window_padding = {
 		left = 0,
 		right = 0,
