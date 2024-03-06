@@ -7,7 +7,7 @@ local config = {
 	quit_when_all_windows_are_closed = true,
 
 	color_scheme = "Catppuccin Mocha",
-	font_size = 18,
+	font_size = 19,
 	line_height = 1.0,
 	font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Regular" }),
 	font_rules = {
