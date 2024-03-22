@@ -6,8 +6,8 @@ local config = {
 	hide_mouse_cursor_when_typing = true,
 	quit_when_all_windows_are_closed = true,
 
-	color_scheme = "Catppuccin Mocha",
-	font_size = 19,
+	color_scheme = "Dracula (Official)",
+	font_size = 20,
 	line_height = 1.0,
 	font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Regular" }),
 	font_rules = {

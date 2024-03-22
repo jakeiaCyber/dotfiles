@@ -43,6 +43,7 @@ yabai -m rule --add app="^Notes$" manage=off
 # yabai -m rule --add app="^微信$" manage=off
 # yabai -m rule --add app="^QQ$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Alfred 5$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^阿里云盘$" manage=off
