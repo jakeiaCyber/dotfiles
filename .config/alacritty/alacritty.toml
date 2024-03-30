@@ -1,7 +1,7 @@
 [window]
 decorations = "buttonless"
-opacity = 0.7
-blur = true
+opacity = 0.75
+blur = false
 option_as_alt = "Both"
 [font]
 normal = { style = "Regular", family = "FiraCode Nerd Font Mono" }

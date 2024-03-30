@@ -134,7 +134,7 @@ alias tk="tmux kill-session -t"
 alias tlnvim=" tmuxifier load-session nvimconfig"
 alias clock="tty-clock -s"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 function ya() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -162,3 +162,7 @@ unset __conda_setup
 # tmuxifier init
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
+# github copilot CLI
+eval "$(gh copilot alias -- zsh)"
+# starship
+eval "$(starship init zsh)"
