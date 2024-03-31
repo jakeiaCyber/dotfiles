@@ -6,14 +6,14 @@ local config = {
 	hide_mouse_cursor_when_typing = true,
 	quit_when_all_windows_are_closed = true,
 
-	color_scheme = "Dracula (Official)",
+	color_scheme = "Catppuccin Mocha",
 	font_size = 20,
 	line_height = 1.0,
-	font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Regular" }),
+	font = wezterm.font("Maple Mono NF CN", { weight = "Regular" }),
 	font_rules = {
 		{
 			italic = true,
-			font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Bold", italic = true }),
+			font = wezterm.font("Maple Mono NF CN", { weight = "Bold", italic = true }),
 		},
 	},
 	adjust_window_size_when_changing_font_size = true,
@@ -45,11 +45,10 @@ local config = {
 	window_decorations = "RESIZE",
 	show_new_tab_button_in_tab_bar = false,
 
-	window_background_opacity = 0.7,
-	macos_window_background_blur = 10,
+	window_background_opacity = 0.9,
+	macos_window_background_blur = 70,
 	window_close_confirmation = "NeverPrompt",
-
-	-- text_background_opacity = 0.5,
+	text_background_opacity = 0.9,
 	window_padding = {
 		left = 0,
 		right = 0,
