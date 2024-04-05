@@ -6,7 +6,7 @@ local config = {
 	hide_mouse_cursor_when_typing = true,
 	quit_when_all_windows_are_closed = true,
 
-	color_scheme = "Catppuccin Mocha",
+	color_scheme = "One Dark (Gogh)",
 	font_size = 20,
 	line_height = 1.0,
 	font = wezterm.font("Maple Mono NF CN", { weight = "Regular" }),
@@ -21,19 +21,10 @@ local config = {
 	warn_about_missing_glyphs = false,
 	keys = {
 		{ key = "F4", action = "ToggleFullScreen" },
-		-- { key = "F5",        action = "ReloadConfiguration" },
+		{ key = "F5", action = "ReloadConfiguration" },
 		{ key = "+", mods = "CTRL", action = "IncreaseFontSize" },
 		{ key = "-", mods = "CTRL", action = "DecreaseFontSize" },
 		{ key = "Backspace", mods = "CTRL", action = "ResetFontSize" },
-		{ key = "'", mods = "CTRL", action = wezterm.action.SendString("\x1b[27;5;39~") },
-		{ key = "(", mods = "CTRL", action = wezterm.action.SendString("\x1b[27;5;40~") },
-		{ key = ")", mods = "CTRL", action = wezterm.action.SendString("\x1b[27;5;41~") },
-		{ key = ",", mods = "CTRL", action = wezterm.action.SendString("\x1b[27;5;44~") },
-		{ key = ".", mods = "CTRL", action = wezterm.action.SendString("\x1b[27;5;46~") },
-		{ key = ";", mods = "CTRL", action = wezterm.action.SendString("\x1b[27;5;59~") },
-		{ key = "/", mods = "CTRL", action = wezterm.action.SendString("\x1b[27;5;47~") },
-		{ key = "~", mods = "CTRL", action = wezterm.action.SendString("\x1b[27;5;126~") },
-		{ key = "`", mods = "CTRL", action = wezterm.action.SendString("\x1b[27;5;96~") },
 	},
 	send_composed_key_when_left_alt_is_pressed = false,
 	send_composed_key_when_right_alt_is_pressed = false,
@@ -45,8 +36,8 @@ local config = {
 	window_decorations = "RESIZE",
 	show_new_tab_button_in_tab_bar = false,
 
-	window_background_opacity = 0.9,
-	macos_window_background_blur = 70,
+	window_background_opacity = 0.7,
+	-- macos_window_background_blur = 70,
 	window_close_confirmation = "NeverPrompt",
 	text_background_opacity = 0.9,
 	window_padding = {
@@ -56,42 +47,6 @@ local config = {
 		bottom = 0,
 	},
 	term = "xterm-256color",
-	hyperlink_rules = {
-		-- Matches: a URL in parens: (URL)
-		{
-			regex = "\\((\\w+://\\S+)\\)",
-			format = "$1",
-			highlight = 1,
-		},
-		-- Matches: a URL in brackets: [URL]
-		{
-			regex = "\\[(\\w+://\\S+)\\]",
-			format = "$1",
-			highlight = 1,
-		},
-		-- Matches: a URL in curly braces: {URL}
-		{
-			regex = "\\{(\\w+://\\S+)\\}",
-			format = "$1",
-			highlight = 1,
-		},
-		-- Matches: a URL in angle brackets: <URL>
-		{
-			regex = "<(\\w+://\\S+)>",
-			format = "$1",
-			highlight = 1,
-		},
-		-- Then handle URLs not wrapped in brackets
-		{
-			regex = "\\b\\w+://\\S+[)/a-zA-Z0-9-]+",
-			format = "$0",
-		},
-		-- implicit mailto link
-		{
-			regex = "\\b\\w+@[\\w-]+(\\.[\\w-]+)+\\b",
-			format = "mailto:$0",
-		},
-	},
 }
 
 return config
