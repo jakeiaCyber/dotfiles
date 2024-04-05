@@ -7,14 +7,16 @@ plug "zap-zsh/zap-prompt"
 plug "esc/conda-zsh-completion"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "atoftegaard-git/zsh-omz-autocomplete"
-# bindings
+#========bindings=====
 bindkey '>' autosuggest-accept
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
-# proxy
+#-=======export=======
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
-# alias
+# tmuxifier init
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+#========alias========
 alias python="python3"
 alias pip="pip3"
 alias n="nvim"
@@ -32,8 +34,8 @@ alias tka="tmux list-sessions | cut -d: -f1 | xargs -t -I {} tmux kill-session -
 alias tk="tmux kill-session -t"
 alias tlnvim=" tmuxifier load-session nvimconfig"
 alias clock="tty-clock -s"
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#======init==========
+# yazi init
 function ya() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -42,8 +44,8 @@ function ya() {
 	fi
 	rm -f -- "$tmp"
 }
+# zoxide init
 eval "$(zoxide init --cmd cd zsh)"
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -59,9 +61,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 # tmuxifier init
-export PATH="$HOME/.tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
-# github copilot CLI
+# github copilot CLI init
 eval "$(gh copilot alias -- zsh)"
-# starship
-# eval "$(starship init zsh)"
