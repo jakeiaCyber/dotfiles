@@ -64,4 +64,4 @@ unset __conda_setup
 eval "$(tmuxifier init -)"
 # github copilot CLI init
 # NOTE: slow down zsh startup speed
-# eval "$(gh copilot alias -- zsh)"
+    # eval "$(gh copilot alias -- zsh)"

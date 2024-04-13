@@ -7,7 +7,7 @@ local config = {
 	quit_when_all_windows_are_closed = true,
 
 	color_scheme = "One Dark (Gogh)",
-	font_size = 20,
+	font_size = 18,
 	line_height = 1.0,
 	font = wezterm.font("Maple Mono NF CN", { weight = "Regular" }),
 	font_rules = {
@@ -20,11 +20,11 @@ local config = {
 	native_macos_fullscreen_mode = true,
 	warn_about_missing_glyphs = false,
 	keys = {
-		{ key = "F4", action = "ToggleFullScreen" },
-		{ key = "F5", action = "ReloadConfiguration" },
-		{ key = "+", mods = "CTRL", action = "IncreaseFontSize" },
-		{ key = "-", mods = "CTRL", action = "DecreaseFontSize" },
-		{ key = "Backspace", mods = "CTRL", action = "ResetFontSize" },
+		{ key = "F4",        action = "ToggleFullScreen" },
+		{ key = "F5",        action = "ReloadConfiguration" },
+		{ key = "+",         mods = "CTRL",                 action = "IncreaseFontSize" },
+		{ key = "-",         mods = "CTRL",                 action = "DecreaseFontSize" },
+		{ key = "Backspace", mods = "CTRL",                 action = "ResetFontSize" },
 	},
 	send_composed_key_when_left_alt_is_pressed = false,
 	send_composed_key_when_right_alt_is_pressed = false,

@@ -5,7 +5,7 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 12px
-yabai -m config top_padding 12
+yabai -m config top_padding 17
 yabai -m config bottom_padding 10
 yabai -m config left_padding 10
 yabai -m config right_padding 10
@@ -46,6 +46,7 @@ yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Alfred 5$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
-yabai -m rule --add app="^阿里云盘$" manage=off
+# yabai -m rule --add app="^阿里云盘$" manage=off
+yabai -m rule --add app="DevCleaner" manage=off
 # yabai -m rule --add app="^飞书$" manage=off
 borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width= 1 &
