@@ -8,9 +8,9 @@ normal = { style = "Regular", family = "Maple Mono NF CN" }
 bold = { style = "Bold", family = "Maple Mono NF CN" }
 italic = { style = "Italic", family = "Maple Mono NF CN" }
 bold_italic = { style = "Bold Italic", family = "Maple Mono NF CN" }
-size = 15
+size = 18
 [env]
-term = "xterm-256color"
+term = "tmux-256color"
 [mouse]
 hide_when_typing = true
 [colors]
