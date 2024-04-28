@@ -1,14 +1,20 @@
 [window]
 decorations = "buttonless"
-opacity = 0.75
+# opacity = 0.75
 blur = false
 option_as_alt = "Both"
 [font]
-normal = { style = "Regular", family = "Maple Mono NF CN" }
-bold = { style = "Bold", family = "Maple Mono NF CN" }
-italic = { style = "Italic", family = "Maple Mono NF CN" }
-bold_italic = { style = "Bold Italic", family = "Maple Mono NF CN" }
+# normal = { style = "Regular", family = "Maple Mono NF CN" }
+# bold = { style = "Bold", family = "Maple Mono NF CN" }
+# italic = { style = "Italic", family = "Maple Mono NF CN" }
+# bold_italic = { style = "Bold Italic", family = "Maple Mono NF CN" }
+#
+normal = { style = "Regular", family = "FiraCode Nerd Font Mono" }
+bold = { style = "Bold", family = "FiraCode Nerd Font Mono" }
+italic = { style = "Italic", family = "FiraCode Nerd Font Mono" }
+bold_italic = { style = "Bold Italic", family = "FiraCode Nerd Font Mono" }
 size = 18
+
 [env]
 term = "tmux-256color"
 [mouse]

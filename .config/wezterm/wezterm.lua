@@ -1,15 +1,14 @@
 local wezterm = require("wezterm")
-
 local config = {
 	default_prog = { "/bin/zsh", "-l" },
 	allow_square_glyphs_to_overflow_width = "Never",
 	hide_mouse_cursor_when_typing = true,
 	quit_when_all_windows_are_closed = true,
-
-	color_scheme = "One Dark (Gogh)",
+	color_scheme = "Astrodark",
+	-- color_scheme = "One Dark (Gogh)",
 	font_size = 18,
 	line_height = 1.0,
-	font = wezterm.font("Maple Mono NF CN", { weight = "Regular" }),
+	font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Regular" }),
 	font_rules = {
 		{
 			italic = true,

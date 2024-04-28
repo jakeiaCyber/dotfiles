@@ -3,7 +3,7 @@
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/exa"
-plug "zap-zsh/zap-prompt"
+# plug "zap-zsh/zap-prompt"
 plug "esc/conda-zsh-completion"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "atoftegaard-git/zsh-omz-autocomplete"
@@ -26,6 +26,7 @@ alias cls="clear"
 alias ya="yazi"
 alias cat="bat"
 # alias ls="colorls -a"
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias tnew="tmux new -s"
 alias ta="tmux a -t"
 alias tl="tmux ls"
@@ -65,3 +66,6 @@ eval "$(tmuxifier init -)"
 # github copilot CLI init
 # NOTE: slow down zsh startup speed
     # eval "$(gh copilot alias -- zsh)"
+
+# starship init
+eval "$(starship init zsh)"
