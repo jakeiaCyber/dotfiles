@@ -1,7 +1,7 @@
 [window]
 decorations = "buttonless"
-# opacity = 0.75
-blur = false
+opacity = 0.9
+blur = true
 option_as_alt = "Both"
 [font]
 # normal = { style = "Regular", family = "Maple Mono NF CN" }
@@ -16,7 +16,7 @@ bold_italic = { style = "Bold Italic", family = "FiraCode Nerd Font Mono" }
 size = 18
 
 [env]
-term = "tmux-256color"
+term = "xterm-256color"
 [mouse]
 hide_when_typing = true
 [colors]
