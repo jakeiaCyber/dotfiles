@@ -5,10 +5,10 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 12px
-yabai -m config top_padding 5
-yabai -m config bottom_padding 10
-yabai -m config left_padding 10
-yabai -m config right_padding 10
+yabai -m config top_padding 0
+yabai -m config bottom_padding 1
+yabai -m config left_padding 1
+yabai -m config right_padding 1
 yabai -m config window_gap 0
 
 # -- mouse settings --
@@ -40,14 +40,14 @@ yabai -m rule --add app="^XApp$" manage=off
 yabai -m rule --add app="^Clash Verge$" manage=off
 yabai -m rule --add app="^Tencent Lemon$" manage=off
 yabai -m rule --add app="^Notes$" manage=off
-# yabai -m rule --add app="^Wechat$" manage=off
-# yabai -m rule --add app="^微信$" manage=off
-# yabai -m rule --add app="^QQ$" manage=off
+yabai -m rule --add app="^Wechat$" manage=off
+yabai -m rule --add app="^微信$" manage=off
+yabai -m rule --add app="^QQ$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^Alfred 5$" manage=off
 yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 # yabai -m rule --add app="^阿里云盘$" manage=off
 yabai -m rule --add app="DevCleaner" manage=off
-# yabai -m rule --add app="^飞书$" manage=off
-borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width= 1 &
+yabai -m rule --add app="^飞书$" manage=off
+borders active_color=00xffffa50 inactive_color=0xff494d64 width= 2 &
